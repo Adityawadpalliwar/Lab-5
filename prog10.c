@@ -1,33 +1,44 @@
-#include<stdio.h>
-int main(){
-	int n,t,i,j=0,k;
-	int sum=0;
-	printf("enter the value of n \n>>>");
-	scanf("%d",&n);
-	int a[n];
+#include <stdio.h>
+
+int main() {
+    int n, i, j,t=0,k=0;
+    printf("Enter the number of elements:\n>>> ");
+    scanf("%d", &n);
+
+    int a[n];
 	int l[n];
-	
-	for(k=0; k<n; k++)
+   
+
+    for (i = 0; i < n; i++) {
+        printf("Enter element %d: ", i + 1);
+        scanf("%d", &a[i]);
+    }
+
+    printf("Duplicate elements are: ");
+    for (i = 0; i < n; i++)
 	 {
-    	printf("enter the value of element of array: ");
-	    scanf("%d",&a[k]);
-	  }
-	
-	for(i=0;i<n-1;i++)
-	 { int m=0;
-	    
-	    for(j=1;j<n-1;j++)
-	      if (a[i]=a[j])
-	      {
-		    m++;
-	      
-		   }
-		   if(m>1)
-	       { printf("%d ",a[i]);
-		   }
-	      
-	 	
-	 	...
-      }
-      return 0;
- }
+		int m=0;
+        for (j = i + 1; j < n; j++)
+		 {
+            if (a[i] == a[j]) 
+			{
+               m++;
+            }
+		}
+		if (m==1)
+		{
+		l[t]=a[i];
+		t++;
+		}
+			
+		
+        
+    }
+
+ 
+ for(k=0;k<t;k++)
+ printf("%d ", l[k]);
+    
+
+    return 0;
+}

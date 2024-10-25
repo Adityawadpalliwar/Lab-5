@@ -25,10 +25,10 @@ int main() {
                m++;
             }
 		}
-		if (m==0)
+		if (m>0)
 		{
-		l[t]=a[i];
-		t++;
+		printf("%d ",a[i]);
+        break;
 		}
 			
 		
@@ -36,8 +36,7 @@ int main() {
     }
 
  
- for(k=0;k<t;k++)
- printf("%d ", l[k]);
+
     
 
     return 0;
