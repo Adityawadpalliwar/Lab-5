@@ -30,5 +30,5 @@ int main(){
 	}
 	printf("the average of integers in array is %f\n",(float)(sum/n));
 	printf("the maximum of integers in array is %d\n",a[n-1]);
-	printf("the minimum of integers in array is %d\m",a[0]);
+	printf("the minimum of integers in array is %d\n",a[0]);
 }
