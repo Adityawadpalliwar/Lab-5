@@ -1,5 +1,5 @@
-
 #include <stdio.h>
+#include<stdlib.h>
 
 int main() {
     int n, i, j,t=0,k=0;
@@ -21,19 +21,24 @@ int main() {
 		int m=0;
         for (j = i + 1; j < n; j++)
 		 {
-            if (a[i] == a[j]) 
+            if (abs(a[i]) == abs(a[j])) 
 			{
                m++;
             }
 		}
-		
+		if (m==0)
+		{
+		l[t]=a[i];
+		t++;
+		}
 			
 		
         
     }
 
  
-
+ 
+ printf("the number of distinct absolute values among the elements of the array is %d",t);
     
 
     return 0;
