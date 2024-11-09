@@ -23,15 +23,13 @@ int main() {
 
 
      for (i=0;i<m;i++)
-     {
+     {  l[i]=0;
         avg = (a[i]+k)/2.0;
         for (j=0;j<m;j++)
         {
             if (avg==a[j])
-             {l[i]=avg;
-             break;}
-            else
-             l[i]=0;
+             l[i]++;
+           
         }
 
      }
@@ -39,4 +37,3 @@ int main() {
     for(i=0;i<m;i++)
     printf("%d  ", l[i]);
 }
-.

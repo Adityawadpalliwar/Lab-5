@@ -8,6 +8,7 @@ int main() {
 
     int a[n];
 	int l[n];
+    int d[n];
    
 
     for (i = 0; i < n; i++) {
@@ -16,7 +17,7 @@ int main() {
     }
 
     printf("\n");
-    for (i = 0; i < n; i++)
+   for (i = 0; i < n; i++)
 	 {
 		int m=0;
         for (j = i + 1; j < n; j++)
@@ -26,16 +27,29 @@ int main() {
                m++;
             }
 		}
-		
-			
-		
-        
-    }
+		if (m==0)
+		{
+		l[t]=a[i];
+		t++;
+		}
+     }
+     printf("element\tfrequency\n");
+     for (i=0;i<t;i++)
+     {  
+        int m=0;
+        for (j=0;j<n;j++)
+        {
+            if (l[i]==a[j])
+            m++;
+        }
+          printf("   %d\t   %d\n",l[i],m);
+     }
+
+
 
  
 
-    
 
     return 0;
 }
-.
+
