@@ -23,10 +23,7 @@ int main() {
 		
         for (j = i + 1; j < n; j++)
         {
-            if (a[i]+a[j]==value)
            
-             break;
-             }
 
           if (a[i]+a[j]==value)
            { printf("%d %d\n",a[i],a[j]);
@@ -34,7 +31,7 @@ int main() {
              }
         }
          
-             
+     }
 		 
          return 0;
 		}
