@@ -14,13 +14,13 @@ int main(){
 	printf("enter the number : ");
 	scanf("%d",&t);
 	
-		for(i=0;i<n-1;i++)
+		for(i=0;i<n;i++)
 	 {
 	    if (a[i]==t)
 	    { j++;
 		}
      }
      
-     printf("%d ( Number %d is present %d times)",j,t,j);
+     printf("Number %d is present %d times",t,j);
      return 0;
  }
