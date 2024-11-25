@@ -21,6 +21,6 @@ int main(){
 		}
      }
      
-     printf("%d ( Number %d is present %d times)",j,t,j);
+     printf("Number %d is present %d times",t,j);
      return 0;
  }
