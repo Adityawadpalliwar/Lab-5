@@ -27,7 +27,7 @@ int main() {
 		}
 		if (m>0)
 		{
-		printf("%d ",a[i]);
+		printf("%d ",i);
         break;
 		}
 			
