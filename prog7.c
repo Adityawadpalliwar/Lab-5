@@ -14,7 +14,7 @@ int main(){
 	printf("enter the number : ");
 	scanf("%d",&t);
 	
-		for(i=0;i<n-1;i++)
+		for(i=0;i<n;i++)
 	 {
 	    if (a[i]==t)
 	    { j++;
